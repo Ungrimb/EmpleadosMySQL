@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\arkar\\Source\\Repos\\Ungrimb\\EmpleadosMySQL\\EmpleatMySql\\EmpleatMySql.csproj": {}
+    "C:\\Users\\arkar\\source\\repos\\Ungrimb\\EmpleadosMySQL\\EmpleatMySql\\EmpleatMySql.csproj": {}
   },
   "projects": {
-    "C:\\Users\\arkar\\Source\\Repos\\Ungrimb\\EmpleadosMySQL\\EmpleatMySql\\EmpleatMySql.csproj": {
+    "C:\\Users\\arkar\\source\\repos\\Ungrimb\\EmpleadosMySQL\\EmpleatMySql\\EmpleatMySql.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\arkar\\Source\\Repos\\Ungrimb\\EmpleadosMySQL\\EmpleatMySql\\EmpleatMySql.csproj",
+        "projectUniqueName": "C:\\Users\\arkar\\source\\repos\\Ungrimb\\EmpleadosMySQL\\EmpleatMySql\\EmpleatMySql.csproj",
         "projectName": "EmpleatMySql",
-        "projectPath": "C:\\Users\\arkar\\Source\\Repos\\Ungrimb\\EmpleadosMySQL\\EmpleatMySql\\EmpleatMySql.csproj",
+        "projectPath": "C:\\Users\\arkar\\source\\repos\\Ungrimb\\EmpleadosMySQL\\EmpleatMySql\\EmpleatMySql.csproj",
         "packagesPath": "C:\\Users\\arkar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\arkar\\Source\\Repos\\Ungrimb\\EmpleadosMySQL\\EmpleatMySql\\obj\\",
+        "outputPath": "C:\\Users\\arkar\\source\\repos\\Ungrimb\\EmpleadosMySQL\\EmpleatMySql\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -40,6 +40,12 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.21, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
