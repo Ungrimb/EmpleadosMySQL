@@ -86,3 +86,5 @@ C:\Users\arkar\source\repos\Ungrimb\EmpleadosMySQL\EmpleatMySql\bin\Debug\netcor
 C:\Users\arkar\source\repos\Ungrimb\EmpleadosMySQL\EmpleatMySql\obj\Debug\netcoreapp3.1\EmpleatMySql.csproj.CoreCompileInputs.cache
 C:\Users\arkar\source\repos\Ungrimb\EmpleadosMySQL\EmpleatMySql\obj\Debug\netcoreapp3.1\EmpleatMySql.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\arkar\source\repos\Ungrimb\EmpleadosMySQL\EmpleatMySql\obj\Debug\netcoreapp3.1\Razor\Views\Empleat\Index.cshtml.g.cs
+C:\Users\arkar\source\repos\Ungrimb\EmpleadosMySQL\EmpleatMySql\obj\Debug\netcoreapp3.1\Razor\Views\Empleat\AddEmpleat.cshtml.g.cs
+C:\Users\arkar\source\repos\Ungrimb\EmpleadosMySQL\EmpleatMySql\obj\Debug\netcoreapp3.1\Razor\Views\Empleat\EditEmpleat.cshtml.g.cs

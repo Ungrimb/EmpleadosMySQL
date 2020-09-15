@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
@@ -46,6 +47,24 @@ namespace EmpleatMySql.Models
             }
 
             return list;
+        }
+        public async Task DeleteEmpleat(int Id)
+        {
+            using (MySqlConnection conn = GetConnection())
+            {
+                conn.Open();
+                MySqlCommand cmd = new MySqlCommand("DELETE FROM 'empleat' WHERE 'Id' = @id;", conn);
+                using (MySqlDataReader reader = cmd.ExecuteReader())
+                {
+                    cmd.Parameters.Add(new MySqlParameter
+                    {
+                        ParameterName = "@id",
+                        DbType = DbType.Int32,
+                        Value = Id,
+                    });
+                    await cmd.ExecuteNonQueryAsync();
+                }
+            }
         }
 
     }

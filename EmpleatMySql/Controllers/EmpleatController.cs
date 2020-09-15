@@ -18,6 +18,13 @@ namespace EmpleatMySql.Controllers
             return View(context.GetAll());
         }
 
+        public IActionResult AddEmpleat()
+        {
+            EmpleatContext context = HttpContext.RequestServices.GetService(typeof(EmpleatMySql.Models.EmpleatContext)) as EmpleatContext;
+
+            return View(context.GetAll());
+        }
+
         // POST: EmpleatController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -55,9 +62,9 @@ namespace EmpleatMySql.Controllers
         }
 
         // GET: EmpleatController/Delete/5
-        public ActionResult Delete(int id)
+        public ActionResult DeleteEmpleat(int id)
         {
-            return View();
+            return View(DeleteEmpleat(id));
         }
 
         // POST: EmpleatController/Delete/5

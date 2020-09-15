@@ -1,0 +1,52 @@
+﻿@page
+
+@using EmpleatMySql.Models @*namespace*@
+@model EmpleatModel
+@{
+    ViewBag.Title = "Empleats";
+}
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+
+
+<div class="container">
+    <h3>Add Empleat</h3>
+    <hr />
+    <br />
+    <form method="post">
+        <div class="row">
+            <div class="col-md-4">
+                <label asp-for="Empleat.Nom"></label>
+                <input asp-for="Empleat.Nom" class="form-control" />
+                <span class="alert-danger" asp-validation-for="Empleat.Nom"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <label asp-for="Empleat.Cognom"></label>
+                <input asp-for="Empleat.Cognom" class="form-control" />
+                <span class="alert-danger" asp-validation-for="Empleat.Cognom"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <label asp-for="Empleat.Càrrec"></label>
+                <input asp-for="Empleat.Càrrec" class="form-control" />
+                <span class="alert-danger" asp-validation-for="Empleat.Càrrec"></span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <label asp-for="Empleat.Sou"></label>
+                <input asp-for="Empleat.Sou" cl class="form-control" />
+                <span class="alert-danger" asp-validation-for="Empleat.Sou"></span>
+            </div>
+        </div>
+        <br />
+        <input type="submit" value="Save" class="btn btn-primary" />
+        <a class="btn btn-default" href="/Index">Cancel</a>
+    </form>
+</div>
+
